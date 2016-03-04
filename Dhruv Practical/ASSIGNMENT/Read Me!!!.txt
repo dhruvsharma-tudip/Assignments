@@ -1,0 +1,10 @@
+1.) create html with table and update options. -done.
+2.) read data from json.-done
+3.)add data from these textboxes into table.-done
+4.)apply validation and masked input.(validation through malsup ajax or jquery plugin)
+5.) Add responsive touch and bootstrap.
+
+
+6.)masked input.
+7.)apply validation on table textbox.
+

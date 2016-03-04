@@ -1,0 +1,27 @@
+create your ac-firstnamelastname-tudip
+add github handle in steer simple
+creating new task for ac creation in "git.tudip.com"
+description -name and email.
+immidiate assignee- Nilesh Pawar
+
+after ac creation add repositry.
+
+
+
+clone url -.git
+
+
+in cmd clone url . 
+
+clone url from skype.
+
+
+
+
+working directory.  ------>clone-------> remotw repositary
+
+
+
+
+
+local system-working dir,stagging area,local repositary 

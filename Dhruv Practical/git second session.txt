@@ -1,0 +1,9 @@
+create repositary.
+assignment.
+
+git push origin master
+
+
+practice scenarios.
+
+

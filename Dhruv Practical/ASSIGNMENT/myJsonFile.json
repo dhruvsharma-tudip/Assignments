@@ -1,0 +1,24 @@
+var info=[{
+"FirstName": "Dhruv",
+"LastName": "Sharma",
+"RollNO":"10",
+"Subjects":"Physics",
+},
+{
+"FirstName": "Aryan",
+"LastName": "Malhotra",
+"RollNO":"20",
+"Subjects":"Chemistry",
+},
+{
+"FirstName": "Ranvijay",
+"LastName": "Thorat",
+"RollNO":"30",
+"Subjects":"Maths",
+},
+{
+"FirstName": "Rohit",
+"LastName": "Rai",
+"RollNO":"40",
+"Subjects":"Biology",
+}];

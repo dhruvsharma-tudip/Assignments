@@ -1,0 +1,32 @@
+var info=[{
+"FirstName": "Dhruv",
+"LastName": "Sharma",
+"RollNO":"10",
+"Subject1":"Science",
+"Subject2":"Maths",
+"Subject3":"Physics"
+},
+{
+"FirstName": "Aryan",
+"LastName": "Malhotra",
+"RollNO":"20",
+"Subject1":"Science",
+"Subject2":"Maths",
+"Subject3":"Physics"
+},
+{
+"FirstName": "Ranvijay",
+"LastName": "Thorat",
+"RollNO":"30",
+"Subject1":"Science",
+"Subject2":"Maths",
+"Subject3":"Physics"
+},
+{
+"FirstName": "Rohit",
+"LastName": "Rai",
+"RollNO":"40",
+"Subject1":"Science",
+"Subject2":"Maths",
+"Subject3":"Physics"
+}];

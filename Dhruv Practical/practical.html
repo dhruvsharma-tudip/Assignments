@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<style>
+header{
+     padding:10px;
+	 text-align:center;
+}
+nav{
+    height:500px;
+    width:200px;
+    float:left;
+    line-height:50px;
+	padding:10px;
+	  background-color:gray;
+}
+section{
+    float:left;
+	padding:30px;
+	float:left;
+}
+
+footer{
+      clear:both;
+	  background-color:black;
+	  color:white;
+	  text-align:center;
+	  padding:10px;
+    }
+	table,td,tr{
+	  border-collapse:collapse;
+	  }
+</style>
+<title>
+Practical 1 HTML5
+</title>
+</head>
+<body>
+<header>
+<h1>Practical 1 On HTML5</h1>
+<q style="text-align:center">Destiny Repeats,and you will WIN.</q>
+</header>
+<nav>
+<strong>Link1 &nbsp <br> Link2 &nbsp <br>Link3</strong>
+</nav>
+<section>
+<h3>Hello this is my section area</h3><br/>
+Enter a Number Between 1 to 10:<br/>
+<input id="numb"/>
+
+<p id="demo">Where you want to go,Obviously You want be sitting here.</p>
+<button type="button" onclick="myFunction()">Submit</button>
+<button onclick="document.getElementById('demo').innerHTML = Date()">Current Time</button>
+<p><a href="https://www.google.com">Goolge</a><br>
+<a href="https://www.facebook.com">Faceboook</a>
+<p>
+<p id="demo1"></p>
+<pre>
+You are Right Chap,
+Its Going to be a beautiful Page.
+<code>
+int x = 5;
+float y = 2.2;
+char c = 'D';
+</code>
+</pre>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+
+</video>
+<table style="border:1px solid">
+<caption>Image Table</caption>
+<tr><td><img src="" alt=MyImage1></td><td><img src="" alt=MyImage2></td></tr>
+<tr><td><img src="" alt=MyImage3></td><td><img src="" alt=MyImage4></td></tr>
+<tr><td><img src="" alt=MyImage5></td><td><img src="" alt=MyImage6></td></tr>
+</table>
+<br>
+<br>
+<h2 style="color:rgb(128,128,128)">High Line Version</h2>
+<ol type="square">
+  <li>Audi</li>
+  <li>Merc</li>
+   <li>BMW</li>
+</ol>
+<br>
+<br>
+<h2 style="color:rgb(128,128,128)">Old School</h2>
+<ul list-style-type:disc>
+<li>Honda</li>
+     <ol type="i">
+	   <li>Civic</li>
+	   <li>City 1.5</li>
+	   <li>City 1.8</li>
+	   </ol>
+<li>Mitsubishi</li>
+     <ol type="i">
+	   <li>Lancer</li>
+	   <li>Cedia</li>
+	   <li>Pajero</li>
+	   </ol>
+</ul>
+ <h2>Now i will take you to a&nbsp<a href ="">Dreamyworld</a></h2>
+ <form id="form1" autocomplete="on">
+ <fieldset>
+ <legend>Personal Information:</legend>
+ First Name:
+ <input type="text" name="firstName" placeholder="First Name" autofocus><br>
+ Last Name:
+ <input type="text" name="lastName" placeholder="Last Name"><br>
+ </fieldset>
+ <input type="radio" name="gender" value="Male" checked>Male<br>
+ <input type="radio" name="gender" value="Female">Female<br>
+ <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> <br>
+   Birthday:
+  <input type="date" name="bday"><br>
+   <input type="checkbox" name="vehicle1" value="Bike">bike<br>
+  <input type="checkbox" name="vehicle2" value="Car">car 
+  <input type="submit" value="Submit">
+ </form>
+ <script>
+ function myFunction(){
+ var x;
+ var text="";
+  x = document.getElementById("numb").value;
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";	
+    }
+	document.getElementById("demo").innerHTML = text;
+	//document.getElementById("demo1").innerHTML = text.constructor;
+	//document.getElementById("demo1").innerHTML = text.length;
+	}
+	var text1 = "Hello";
+	var text2 = "World";
+	text3 = text1.concat("	",text2);
+	document.getElementById("demo1").innerHTML = text3;
+</script>
+</section>
+
+<footer>
+<span style="color:red">Dhruv</span> Technologies &copy 2016
+</footer>
+</body>
+</html>

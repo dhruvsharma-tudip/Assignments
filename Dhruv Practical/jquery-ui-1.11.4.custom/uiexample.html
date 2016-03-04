@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+  <style>
+  #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;}
+  #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+  #resizable { width: 150px; height: 150px; padding: 0.5em;float:left; }
+  #resizable h3 { text-align: center; margin: 0;float:left; }
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; float:right;}
+  #selectable .ui-selected { background: #F39814; color: white;float:right; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%;float:right; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px;float:right; }
+   #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%;float:left; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px;float:left; }
+  #sortable li span { position: absolute; margin-left: -1.3em; float:left;}
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable" ).draggable();
+	$("#droppable").droppable({
+	drop:function(event,ui){
+	$(this)
+	.addClass("ui-state-highlight")
+	.find("p")
+	.html("dropped!");
+	}
+	});
+  });
+  
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+   $(function() {
+    $( "#selectable" ).selectable();
+  });
+  
+  $(function(){
+  $("#resizable").resizable();
+  });
+  </script>
+</head>
+<body>
+<ul id="sortable">
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+</ul>
+
+<ol id="selectable">
+  <li class="ui-widget-content">Item 1</li>
+  <li class="ui-widget-content">Item 2</li>
+  <li class="ui-widget-content">Item 3</li>
+  <li class="ui-widget-content">Item 4</li>
+  <li class="ui-widget-content">Item 5</li>
+  <li class="ui-widget-content">Item 6</li>
+  <li class="ui-widget-content">Item 7</li>
+</ol>
+ 
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+
+<div id="resizable" class="ui-widget-content">
+  <h3 class="ui-widget-header">Resizable</h3>
+</div>
+ 
+ 
+ 
+</body>
+</html>
